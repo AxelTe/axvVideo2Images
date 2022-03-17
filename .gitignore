@@ -1,0 +1,7 @@
+# exclude node modules
+node_modules/*
+bin/*
+obj/*
+out/*
+.vs/*
+axvVideo2ImagesVisual/*

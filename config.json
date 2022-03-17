@@ -1,0 +1,9 @@
+{
+	"seqPath": true,
+	"video2images": {
+		"video": "../../sequencies/MI9-circles.mp4",
+		"seqpath": "../../sequencies/circles_2",
+		"fps": 10,
+		"scale": 4
+	}
+}

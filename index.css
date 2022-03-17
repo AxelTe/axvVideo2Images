@@ -1,0 +1,238 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+/*body {
+    display: flex;
+    flex-direction: column;
+}*/
+
+div {
+  border: 0px;
+  font-family: Helvetica;
+  font-weight: normal;
+}
+
+header,
+footer {
+    flex: none;
+}
+
+input {
+    font-size: 15px;
+    width: 60px;
+    background-color: cornflowerblue;
+}
+
+button {
+    font-size: 18px;
+    background-color: cornflowerblue;
+}
+
+canvas {
+    margin: 10px;
+    border: 2px solid orange;
+    background-color: lightseagreen;
+}
+
+video {
+    display: none;
+}
+
+/*
+ * classes
+ */
+
+.screenDiv {
+    display: block;
+}
+
+.imageBtn {
+    /*border: 1px solid darkblue;*/
+    width: 40px;
+    height: 40px;
+}
+
+.inlineText {
+    width: auto;
+    display: inline-block;
+}
+
+.tableRow {
+    border: 0px;
+    display: flex;
+}
+
+.head1 {
+    font-size: 2em; /**/
+}
+
+.popup {
+    background-color: #CCC;
+    z-index: 2;
+    position: absolute;
+    display: none;
+}
+
+.tableCol {
+    border: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tableElem {
+    flex: 1 1 0;
+    border: 1px solid #031424;
+    text-align: center;
+    padding: 4px;
+    margin: 1px;
+}
+
+.tableElemText {
+    flex: 1 1 0;
+    /*flex-grow: 1;*/
+    border: 1px solid #031424;
+    text-align: center;
+    padding: 4px;
+    margin: 1px;
+    /*display: flex;*/
+    /*width: 100%;*/
+    /*box-sizing: border-box;*/
+}
+
+.tableElemLeftText {
+    flex: 1 1 0;
+    /*flex-grow: 1;*/
+    border: 1px solid #031424;
+    text-align: left;
+    padding: 4px;
+    margin: 1px;
+    /*display: flex;*/
+}
+
+.tableElemInput {
+    flex: 1 1 0;
+    border: 1px solid #031424;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.tableElemBtn {
+    flex: 1 1 0;
+    border: 1px solid #031424;
+    text-align: center;
+    padding: 4px;
+    margin: 1px;
+}
+
+
+.dropbtn {
+    background-color: #FCA624;
+    color: white;
+    padding: 4px;
+    font-size: 14px;
+    margin: 1px;
+    cursor: pointer;
+}
+
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #999900;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    width: 240px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content p {
+        color: black;
+        padding: 3px 3px;
+        text-decoration: none;
+        display: block;
+    }
+
+.dropdown a:hover {
+    background-color: #f1f1f1
+}
+
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/*
+ * IDs
+ */
+#headRow {
+    background-color: blue;
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+
+#headLine {
+    background-color: cornflowerblue;
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+#headLeft {
+    flex: 1 33%;
+    text-align: left;
+}
+
+#headCenter {
+    flex: 1 33%;
+    color: darkblue;
+    text-align: center;
+}
+
+#headRight {
+    flex: 1 33%;
+    color: darkblue;
+    text-align: right;
+    font-size: 0.4em;
+}
+
+
+#video {
+    /*float: left;*/
+}    
+
+#wrapperCamera {
+    background-color: lightgray;
+    color: darkblue;
+}
+#wrapperPreProcessing {
+    background-color: lightgray;
+    color: darkblue;
+}

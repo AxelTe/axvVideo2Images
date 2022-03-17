@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <title>video2images</title>
+    <link href="./index.css" rel="stylesheet">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./src/axv-144-144.png">
+</head>
+<body>
+    <header id="mainTool">
+        <div class="tableRow">
+            <button id="loadVideoBtn" class="tableElemBtn">video (in) </button>
+            <button id="loadPathOutBtn" class="tableElemBtn">path (out)</button>
+            <select id="scaleDownSelect" name="scale down" class="tableElemBtn">
+                <option value="0">scale down 1</option>
+                <option value="1">scale down 2</option>
+                <option value="2">scale down 4</option>
+                <option value="3">scale down 8</option>
+                <option value="4">scale down 16</option>
+            </select>
+            <select id="capTimeSelect" name="cap. time" class="tableElemBtn">
+                <option value="0">cap. time: 20ms</option>
+                <option value="1">cap. time: 40ms</option>
+                <option value="2">cap. time: 80ms</option>
+                <option value="3">cap. time: 160ms</option>
+                <option value="4">cap. time: 320ms</option>
+                <option value="5">cap. time: 640ms</option>
+            </select>
+            <button id="startBtn" class="tableElemBtn">start</button>
+
+        </div>
+    </header>
+
+    <video id="videoInput" muted width="640" height="480" style="background-color: lightseagreen"></video>
+    <canvas id="canvas" style="background-color: cornflowerblue"></canvas>
+
+    <footer id="statusLine">
+        <div id="statusLine1">video in: </div>
+        <div id="statusLine2">output path: </div>
+        <div id="statusLine3">output: </div>
+        <div id="statusLine4"> </div>
+        We are using Node.js <span id="node-version"></span>,
+        Chromium <span id="chrome-version"></span>,
+        and Electron <span id="electron-version"></span>.
+    </footer>
+
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+</body>
+</html>
